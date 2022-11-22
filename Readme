@@ -1,1 +1,34 @@
+Commandes pour mener une reconnaissance OSINT 
+
 A utiliser avec une distribution Kali Linux THP by Peter Kim lien: https://cloud.fdudaev.fr/index.php/s/9f4r7MRk4Fkw2pQ
+
+1-Analyse manuelle des certificats SSL: cd /opt/sslScrape python ./sslScrape.py [adresseIP ou plage CIDR]
+
+2-Decouverte de sous-domaines
+
+https://centralops/net/co/domaindossier.aspx
+
+3-Discover Scripts Reconnaissance / Decouverte
+
+cd /opt/discover
+./update.sh 
+./discover.sh
+Domain
+Passive
+Nom Entreprise
+Domaine 
+
+4-KNOCK Enumeration de sous-domaines via une wordlist
+
+cd /opt/knock/knockpy
+python ./knockpy.py mondomaine.com
+
+5-Sublist3r
+
+cd /opt/Sublist3r
+python sublist3r.py -d mondomaine.com -o mondomaine.com
+
+6-SubBrute Recensement de sous-domaines et spiderDNS
+
+cd /opt/subbrute
+./subbrute/py mondomaine.com
